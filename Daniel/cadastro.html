@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro IFBA</title>
+</head>
+
+<body>
+    <form method="GET" action="ok.html">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome: <input type="text" name="nome" id="nome" size="40" maxlength="40"
+                        placeholder="Nome Completo" required/></label>
+            </p>
+
+            <p>
+                <label for="cpf">CPF: <input type="number" name="cpf" id="cpf" size="11" maxlength="11"
+                        placeholder="CPF" required /></label>
+            </p>
+
+            <p>
+                <label for="email">Email: <input type="email" name="email" id="email" size="40" maxlength="40"
+                        placeholder="Email" /> </label>
+            </p>
+
+            <p>
+                <label for="tel">Telefone: <input type="tel" name="tel" id="tel" size="11" maxlength="11"
+                        placeholder="Telefone"></label>
+            </p>
+
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" checked /> <label for="masc">Masculino</label><br />
+                <input type="radio" name="sexo" id="fem" /> <label for="fem">Feminino</label>
+            </fieldset>
+
+            <p>
+                <label for="nasc">Data de Nascimento:<input type="date" name="nasc" id="nasc" required/></label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <p>
+                <label for="rua">Logradouro:<input type="text" name="rua" id="rua" size="40" maxlength="80"
+                        placeholder="Rua, Av, Trav, ..." /></label>
+            </p>
+
+            <p>
+                <label for="num">Número:<input type="number" name="num" id="num" min="0" max="99999"
+                        placeholder="Nº" /></label>
+            </p>
+
+            <p><label for="est">Estado: <input type="text" name="est" id="est" placeholder="Estado" size="40"
+                        maxlength="80"></label>
+
+            </p>
+            <p>
+                <label for="cid">Cidade: <input type="text" name="cid" id="cid" maxlength="40" size="40"
+                        placeholder="Sua cidade" /></label>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+        <a href="index.html">Voltar</a>
+    </form>
+</body>
+
+</html>
